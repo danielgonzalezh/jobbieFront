@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,7 +18,60 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <title>Login</title>
+    <title>Signup</title>
   </head>
   <body>
-      <H1>REGISTRO</H1>
+    <main class="login-design">
+      <div class="waves">
+        <img  src="images/jobbie.png" width ="600px" alt="" />
+      </div>
+      <div class="login">
+        <div class="login-data">
+          <img src="assets/collab.png" alt="" />
+          <h1>Registro</h1>
+          <form action="#" class="login-form">
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="text" name="name" id="name" required />
+                <span class="input-label">Nombre</span>
+                <i class="fa fa-user fa-2x"></i>
+
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="text" name="name" id="name" required />
+                <span class="input-label">Apellido</span>
+                <i class="fa fa-user fa-2x"></i>
+
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="email" name="email" id="email" required />
+                <span class="input-label">Correo Electrónico</span>
+                <i class="fas fa-envelope"></i>
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="password" name="password" id="password" required />
+                <span class="input-label">Contraseña</span>
+                <i class="fas fa-lock"></i>
+              </label>
+            </div>
+            <div class="input-group">
+              <label class="input-fill">
+                <input type="password" name="password" id="password" required />
+                <span class="input-label">Confirma contraseña</span>
+                <i class="fas fa-lock"></i>
+              </label>
+            </div>
+            <a href="login.html">¿Ya tienes una cuenta? Inicia Sesión aquí</a>
+            <input type="submit" value="Registrarse" class="btn-login" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
