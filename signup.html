@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    
+   
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,13 +29,22 @@
         <div class="login-data">
           <img src="assets/collab.png" alt="" />
           <h1>Registro</h1>
+ 
+ 
           <form action="#" class="login-form">
+            <div class="input-group">
+              <select name="format" id="format">
+                <option selected disabled>¿Qué eres?</option>
+                <option value="cliente">Cliente</option>
+                <option value="prestador">Prestador de Servicios</option>
+              </select>
+            </div>
             <div class="input-group">
               <label class="input-fill">
                 <input type="text" name="name" id="name" required />
                 <span class="input-label">Nombre</span>
                 <i class="fa fa-user fa-2x"></i>
-
+ 
               </label>
             </div>
             <div class="input-group">
@@ -43,7 +52,7 @@
                 <input type="text" name="name" id="name" required />
                 <span class="input-label">Apellido</span>
                 <i class="fa fa-user fa-2x"></i>
-
+ 
               </label>
             </div>
             <div class="input-group">
@@ -53,6 +62,24 @@
                 <i class="fas fa-envelope"></i>
               </label>
             </div>
+            <script type="text/javascript" src="city_state.js"></script>
+</head>
+<body>
+<div id="widget">
+<form>
+Region&raquo; <select onchange="set_country(this,country,city_state)" size="1" name="region">
+<option value="" selected="selected">Seleccionar Región</option>
+<option value=""></option>
+<script type="text/javascript">
+setRegions(this);
+</script>
+</select>
+País&raquo; <select name="country" size="1" disabled="disabled" onchange="set_city_state(this,city_state)"></select>
+Departamento&raquo; <select name="city_state" size="1" disabled="disabled" onchange="print_city_state(country,this)"></select>
+</form>
+<div id="txtregion"></div>
+<div id="txtplacename"></div>
+</div>
             <div class="input-group">
               <label class="input-fill">
                 <input type="password" name="password" id="password" required />
@@ -75,3 +102,4 @@
     </main>
   </body>
 </html>
+ 
