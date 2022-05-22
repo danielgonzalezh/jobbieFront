@@ -10,56 +10,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleprofile.css">
 </head>
 <body>
-    <header>
-        <nav  class="navbar navbar-expand-lg navbar-dark bg-secondary p-2 text-dark bg-opacity-50">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/boxlogo.png" alt="logo" class="img-fluid" width="100" height="80">
-                    
-                  </a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Foro</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Categorías
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Plomeria</a></li>
-                      <li><a class="dropdown-item" href="#">Electricidad</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Pintura</a></li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Ingresar</button>
-                </form>
-                <form class="d-flex">
-                  <button type="button" class="btn btn-outline-dark">Registrarse</button>
-                </form>
-                
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
+  <div class="hero">
+		<nav>
+			<img src ="images/boxlogo.png" class = "logo" width="200px"></img>
+			<ul>
+				
+				<li><a href="#">Quiénes Somos</a></li>
+				<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Plomeria</a></li>
+            <li><a class="dropdown-item" href="#">Electricidad</a></li>
+            <li><a class="dropdown-item" href="#">Pintura</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+			</ul>
+			<a href="login.html" class="btn">Iniciar Sesión</a>
+      <a href="signup.html" class="btn">Registrarse</a>
+      
+		</nav>
+    <img src="images/banner.png" alt="imagen" class="w-100 img-fluid">
+	</div>
+                  <main>
       <section class="animate__animated animate__fadeIn">
-        <img src="images/banner.png" alt="imagen" class="w-100 img-fluid">
+        
       </section>
       <div class="wow container mt-5 animate__animated animate__fadeInUp">
         <div class="row d-flex justify-content-center">
